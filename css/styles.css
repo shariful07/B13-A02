@@ -391,7 +391,7 @@ nav {
     gap: 16px;
 }
 
-.episode-card > iframe {
+.episode-card>iframe {
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
     width: 100%;
@@ -411,6 +411,7 @@ nav {
     line-height: 24px;
     flex-grow: 1;
 }
+
 .episode-card span {
     display: flex;
     align-items: center;
@@ -419,21 +420,104 @@ nav {
     font-weight: 500;
     color: #00FF88;
 }
+
 @media screen and (max-width: 576px) {
     .feature-sections {
-        padding: 40px 0;        
+        padding: 40px 0;
     }
+
     .feature-sections h2 {
         font-size: 32px;
     }
+
     .episodes {
         grid-template-columns: 1fr;
     }
-    .episode-card > iframe {
+
+    .episode-card>iframe {
         height: 225px;
     }
+
     .episode-card h3 {
         font-size: 20px;
     }
 
+}
+
+/* Host Section */
+.host-section {
+    background-color: #1A0B2E;
+    padding-bottom: 120px;
+}
+
+.host-section h2 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.host-content {
+    background: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.host-details h3 {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.host-details p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 8px;
+}
+
+.social-links a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #533C72;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+    .host-section {
+        padding-bottom: 40px;
+    }
+
+    .host-section h2 {
+        font-size: 32px;
+    }
+
+    .host-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px;
+        border-radius: 24px;
+    }
+
+    .host-details h3 {
+        font-size: 24px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
 }
